@@ -50,33 +50,30 @@ if (currentPath.includes("shop")){
     }
     //Write products on product page
     document.getElementById("products-section").innerHTML = allProducts;
-}
 
-//Display category of foods (Can only be called in shop page)
-function displaySelectedCategoryShop() {
-    let selectedCategory = document.getElementById("categorySelectShop").value;
-
-    let allProducts = ""
-    for(let i = 0; i < products.length ; i++){
-        if (products[i].category.toLowerCase().includes(selectedCategory.toLowerCase())){
-            allProducts +=
-        `
-            <div class="shop-item">
-                <h3>${products[i].productName}</h3>
-                <p class="price">${products[i].price}</p>
-                <img src=${products[i].img} alt="product">
-                <input type="number" value="1" min="1">
-                <br>
-                <button class="add-btn">Add To Cart</button>
-            </div>
-        `; 
+    function displaySelectedCategoryShop() {
+        let selectedCategory = document.getElementById("categorySelectShop").value;
+    
+        let allProducts = ""
+        for(let i = 0; i < products.length ; i++){
+            if (products[i].category.toLowerCase().includes(selectedCategory.toLowerCase())){
+                allProducts +=
+            `
+                <div class="shop-item">
+                    <h3>${products[i].productName}</h3>
+                    <p class="price">${products[i].price}</p>
+                    <img src=${products[i].img} alt="product">
+                    <input type="number" value="1" min="1">
+                    <br>
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+            `; 
+            }
+    
         }
-
+        document.getElementById("products-section").innerHTML = allProducts;
     }
-    document.getElementById("products-section").innerHTML = allProducts;
 }
-
-
 
 //--------------Recipe Section-------------------------
 if (currentPath.includes("recipes")){
@@ -110,31 +107,31 @@ if (currentPath.includes("recipes")){
     }
     //Write recipes on recipe page
     document.getElementById("recipes").innerHTML = allRecipes;
-}
 
-//Display category of recipes (Can only be called on recipe page)
-function displaySelectedCategoryRecipe() {
-    let selectedCategory = document.getElementById("categorySelectRecipe").value;
-
-    let allRecipes = ""
-    for(let i = 0; i < recipes.length ; i++){
-        if (recipes[i].category.toLowerCase().includes(selectedCategory.toLowerCase())){
-            allRecipes +=
-        `
-        <div class="recipe-item">
-            <h3>${recipes[i].recipeName}</h3>
-            <img src="${recipes[i].img}" alt="Recipe Image">
-            <div>
-                <p><i class="fa fa-clock-o"></i>${recipes[i].time}</p>
-                <p><i class="fa fa-cutlery"></i>Serves ${recipes[i].serving}</p>
-            </div>              
-        </div>
-        `; 
+    function displaySelectedCategoryRecipe() {
+        let selectedCategory = document.getElementById("categorySelectRecipe").value;
+    
+        let allRecipes = ""
+        for(let i = 0; i < recipes.length ; i++){
+            if (recipes[i].category.toLowerCase().includes(selectedCategory.toLowerCase())){
+                allRecipes +=
+            `
+            <div class="recipe-item">
+                <h3>${recipes[i].recipeName}</h3>
+                <img src="${recipes[i].img}" alt="Recipe Image">
+                <div>
+                    <p><i class="fa fa-clock-o"></i>${recipes[i].time}</p>
+                    <p><i class="fa fa-cutlery"></i>Serves ${recipes[i].serving}</p>
+                </div>              
+            </div>
+            `; 
+            }
+    
         }
-
+        document.getElementById("recipes").innerHTML = allRecipes;
     }
-    document.getElementById("recipes").innerHTML = allRecipes;
 }
+
 
 
 //---------------------Login Page-----------------------
@@ -167,7 +164,7 @@ if (currentPath.includes("login")){
 }
 
 //--------------Checkout Page-------------------------
-document.addEventListener("DOMContentLoaded", function () {
+if (currentPath.includes("checkout")) {
     let quantityInputs = document.querySelectorAll(".item-quantity");
     const removeButtons = document.querySelectorAll(".remove-button");
     const subtotalElement = document.getElementById("subtotal");
@@ -208,4 +205,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initial update of subtotal and total
     updateTotals();
-});
+};
