@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+<head>
+	<meta charset="UTF-8">
+	<title>About us - MealHaven</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!--Font Awesome Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------Header------------->
+	<header>
+		<div class="big-container">
+			<div class="top-header">
+				<div class="left-header">
+					<div class="mobile-left-header" onclick="menutoggle()">
+						<i class="fa fa-bars"></i>
+						<h1 class="logo">MealHaven</h1>
+					</div>
+					<div class="desktop-left-header">
+						<h1 class="logo"><a href="index.html">MealHaven</a></h1>
+					</div>
+				</div>
+				<div class="right-header">
+					<p class="cart"><a href="checkout.html">$0.00<i class="fa fa-cart-plus"></i></a></p>
+					<a href="login.html" class="desktop-login-icon"><i class="fa fa-user"></i></a>	
+				</div>		
+			</div>
+		</div>
+		<!-- Nav in header -->
+		<nav>
+			<div class="big-container">
+				<ul id="navbar-items">
+					<li><a href="index.html" class="btn">Home</a></li>
+					<li><a href="shop.html" class="btn">Shop</a></li>
+					<li><a href="recipes.html" class="btn">Recipes</a></li>
+					<li id="right-button"><a href="aboutus.html" class="btn">About Us</a></li>
+					<li id="mobile-button"><a href="login.html" class="btn">Login<i class="fa fa-user"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    <!------------Sub Header----------------->
+	<!-- Breadcrumb -->
+	<div class="breadcrumb">
+		<a href="index.html">Home</a>
+		<p>></p>
+		<a href="aboutus.html">About Us</a>
+	</div>
+	<!-- Header -->
+    <div class="sub-header">
+        <div class="flex-row">
+            <h1>About Us</h1> 
+        </div>
+    </div>
+
+    <!------------Description----------------->
+    <div class="description">
+        <div class="big-container">
+            <div class="flex-row">
+                <div class="description-text">
+                    <h2 class="title">Who We Are</h2>
+                    <p>
+                        Welcome to MealHaven, your ultimate destination for culinary inspiration and convenience. 
+                        Our journey began with a simple yet powerful idea: to make mealtime more enjoyable, accessible, 
+                        and healthy for everyone. <br><br>
+                        At MealHaven, we're passionate about bringing delicious, home-cooked meals to your table with minimal effort. 
+                        Our dedicated team of chefs, nutritionists, and food enthusiasts work tirelessly to curate a diverse range of recipes, 
+                        source high-quality ingredients, and design easy-to-follow meal plans.<br><br>
+                        Whether you're a seasoned chef or just starting your culinary adventure,
+                        MealHaven is here to support your cooking aspirations and help you savor every bite. 
+                    </p>
+                </div>
+                <div class="description-image">
+                    <img src="Images/aboutus-1.png.png" alt="aboutus-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Video----------------->
+    <div class="video">
+        <h2 class="title">Here's a video about us</h2>
+        <div class="big-container">
+            <div class="flex-row">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qfZm_lwJaD8?si=aarobfBZyvFJAJot" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!------------Reviews----------------->
+    <div class="reviews">
+        <h2 class="title">Look at these customer's reviews!</h2>
+        <div class="big-container">
+            <div class="flex-row">
+                <div class="review-aboutus">
+                    <h3>John Doe</h3>
+                    <img src="Images/person-1.png.png" alt="person-img">
+                    <div>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>"Great Recipes!"</p>
+                    <audio controls class="review-audio">
+                        <source src="Audio/Customer.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="review-aboutus">
+                    <h3>Samantha Jones</h3>
+                    <img src="Images/person-2.png.png" alt="person-img">
+                    <div>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>"I love their Belgium Biscuits"</p>
+                </div>
+                <div class="review-aboutus">
+                    <h3>Jeremy Shulker</h3>
+                    <img src="Images/person-3.png.png" alt="person-img">
+                    <div>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>"I don't even eat but I love MealHaven!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!----------------Footer Section------------------>
+    <footer>
+        <p id="copyright">Copyright &copy; MealHaven New Zealand Limited 2023 - All Rights Reserved
+    </footer>	
+
+    <!-- Javascript -->
+    <script src="javascript.js"></script>
+</body>

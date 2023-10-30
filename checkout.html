@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout - MealHaven</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!--Font Awesome Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------Header------------->
+	<header>
+		<div class="big-container">
+			<div class="top-header">
+				<div class="left-header">
+					<div class="mobile-left-header" onclick="menutoggle()">
+						<i class="fa fa-bars"></i>
+						<h1 class="logo">MealHaven</h1>
+					</div>
+					<div class="desktop-left-header">
+						<h1 class="logo"><a href="index.html">MealHaven</a></h1>
+					</div>
+				</div>
+				<div class="right-header">
+					<p class="cart"><a href="checkout.html">$0.00<i class="fa fa-cart-plus"></i></a></p>
+					<a href="login.html" class="desktop-login-icon"><i class="fa fa-user"></i></a>	
+				</div>		
+			</div>
+		</div>
+		<!-- Nav in header -->
+		<nav>
+			<div class="big-container">
+				<ul id="navbar-items">
+					<li><a href="index.html" class="btn">Home</a></li>
+					<li><a href="shop.html" class="btn">Shop</a></li>
+					<li><a href="recipes.html" class="btn">Recipes</a></li>
+					<li id="right-button"><a href="aboutus.html" class="btn">About Us</a></li>
+					<li id="mobile-button"><a href="login.html" class="btn">Login<i class="fa fa-user"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+    <!------------Sub Header----------------->
+	<!-- Breadcrumb -->
+	<div class="breadcrumb">
+		<a href="index.html">Home</a>
+		<p>></p>
+		<a href="checkout.html">Checkout</a>
+	</div>
+	<!-- Header -->
+    <div class="sub-header">
+        <div class="flex-row">
+            <h1>Checkout</h1>
+        </div>
+    </div>
+
+
+    <!------------------Checkout Section----------------------->
+    <div class="checkout-section">
+        <div class="big-container">
+            <div class="review-section">
+				<h2>Review your order</h2>
+				<div class="review-item">
+					<div class="review-image-container">
+						<div class="review-img">
+							<img src="Images/product-1.png" alt="product-img">
+							<h3>Banana</h3>
+						</div>
+						<div class="quantity">
+							<p>Qty:</p>
+							<input type="number" value="1" min="1" max="10" class="item-quantity">
+						</div>
+					</div>	
+					<div class="price-container">
+						<p class="price">$20.99</p>
+						<button class="remove-button">Remove</button>
+					</div>
+				</div>
+				<div class="review-item">
+					<div class="review-image-container">
+						<div class="review-img">
+							<img src="Images/product-5.png" alt="product-img">
+							<h3>Beef</h3>
+						</div>
+						<div class="quantity">
+							<p>Qty:</p>
+							<input type="number" value="4" min="1" max="10" class="item-quantity">
+						</div>
+					</div>	
+					<div class="price-container">
+						<p class="price">$15.99</p>
+						<button class="remove-button">Remove</button>
+					</div>
+				</div>
+				<div class="review-item">
+					<div class="review-image-container">
+						<div class="review-img">
+							<img src="Images/product-12.png" alt="product-img">
+							<h3>Belgium Biscuits</h3>
+						</div>
+						<div class="quantity">
+							<p>Qty:</p>
+							<input type="number" value="1" min="1" max="10" class="item-quantity">
+						</div>
+					</div>	
+					<div class="price-container">
+						<p class="price">$99.99</p>
+						<button class="remove-button">Remove</button>
+					</div>
+				</div>
+            </div>
+            <div class="payment-section">
+				<div class="payment-section-container">
+					<h2>Order Summary</h2>
+					<table>
+						<tr>
+							<td>Subtotal</td>
+							<td id="subtotal">$184.94</td>
+						</tr>
+						<tr>
+							<td>Shipping</td>
+							<td id="shipping-cost">$20</td>
+						</tr>
+						<tr>
+							<td><h3>Total</h3></td>
+							<td><h3 id="total">$204.94</h3></td>
+						</tr>
+					</table>
+					<button class="btn">Proceed to Payment</button>
+				</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------Footer Section------------------>
+    <footer>
+        <p id="copyright">Copyright &copy; MealHaven New Zealand Limited 2023 - All Rights Reserved
+    </footer>	
+
+    <!-- Javascript -->
+    <script src="javascript.js"></script>
+</body>

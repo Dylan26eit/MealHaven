@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+<head>
+	<meta charset="UTF-8">
+	<title>MealHaven</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!--Font Awesome Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!----------Header------------->
+	<header>
+		<div class="big-container">
+			<div class="top-header">
+				<div class="left-header">
+					<div class="mobile-left-header" onclick="menutoggle()">
+						<i class="fa fa-bars"></i>
+						<h1 class="logo">MealHaven</h1>
+					</div>
+					<div class="desktop-left-header">
+						<h1 class="logo"><a href="index.html">MealHaven</a></h1>
+					</div>
+				</div>
+				<div class="right-header">
+					<p class="cart"><a href="checkout.html">$0.00<i class="fa fa-cart-plus"></i></a></p>
+					<a href="login.html" class="desktop-login-icon"><i class="fa fa-user"></i></a>	
+				</div>		
+			</div>
+		</div>
+		<!-- Nav in header -->
+		<nav>
+			<div class="big-container">
+				<ul id="navbar-items">
+					<li><a href="index.html" class="btn">Home</a></li>
+					<li><a href="shop.html" class="btn">Shop</a></li>
+					<li><a href="recipes.html" class="btn">Recipes</a></li>
+					<li id="right-button"><a href="aboutus.html" class="btn">About Us</a></li>
+					<li id="mobile-button"><a href="login.html" class="btn">Login<i class="fa fa-user"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<!----------------Slides Section--------------------------->
+	<div class="slides">
+		<div class="big-container">
+			<div class="slide-images">
+				<img src="Images/slideshow-1.png" alt="Slideshow Image">
+				<img src="Images/slideshow-2.png" alt="Slideshow Image">
+				<img src="Images/sildeshow-3.png" alt="Slideshow Image">
+			</div>
+		</div>
+	</div>
+
+	<!--------------------Discover Section--------------------------->
+	<div class="discover">
+		<h2 class="title">Discover</h2>
+		<div class="big-container">
+			<div class="flex-row">
+				<div class="discover-box">
+					<img src="Images/groceries.png" alt="discover image">
+					<p>Come shop for some <span class="green-text">Fresh</span> groceries!<i class="fa fa-arrow-right"></i></p>
+				</div>
+				<div class="discover-box">
+					<img src="Images/chef.png" alt="discover image">
+					<p>Looking to make some <span class="green-text">delicous</span> meals?
+					<br>Come look at our selection of recipes!<i class="fa fa-arrow-right"></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!----------------Footer Section------------------>
+	<footer>
+		<p id="copyright">Copyright &copy; MealHaven New Zealand Limited 2023 - All Rights Reserved
+	</footer>	
+
+	<!-- Javascript -->
+	<script src="javascript.js"></script>	
+</body>
+</html>
+
